@@ -8,8 +8,9 @@ import {
   FaMoon,
 } from "react-icons/fa";
 
+
 const TopNavbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+         const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     // You can also add logic to toggle the class on the body or a theme provider here
@@ -21,8 +22,8 @@ const TopNavbar = () => {
         darkMode ? "bg-gray-800" : "bg-cyan-500"
       } text-white`}
     >
-      <div className="text-lg px-8 font-semibold hover:text-blue-300 duration-300">
-        Mohona
+      <div className="text-lg px-4 font-semibold hover:text-blue-300 duration-300">
+        Mohona Tours & Travels
       </div>
       <div className="flex space-x-4 px-8 items-center">
         <a href="mailto:youremail@example.com" className="hover:text-blue-500">

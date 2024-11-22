@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/tourpress-retina-logo.png";
 import { FaPhone } from "react-icons/fa";
 import TopNavbar from "./TopNavbar";
-
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
- 
+  const selector = useSelector((state) => state.tour.TourCart);
   return (
     <div className=" w-full sticky bg-white z-50 top-0">
       <TopNavbar />
@@ -54,7 +54,7 @@ const Navbar = () => {
               <details className="group">
                 <summary className="cursor-pointer hover:text-blue-600 transition-transform duration-300 transform hover:scale-105">
                   <Link className="" to="/booking">
-                    Booking 
+                    Booking ({selector.length > 0 ? selector.length : "0"})
                   </Link>
                 </summary>
               </details>
