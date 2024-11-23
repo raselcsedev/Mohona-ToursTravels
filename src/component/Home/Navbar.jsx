@@ -11,11 +11,13 @@ const Navbar = () => {
       <TopNavbar />
       <div className="navbar shadow-lg  bg-white">
         <div className="flex-1">
+          <Link to="/">
           <img className="w-40 h-8" src={logo} alt="TourPress Logo" />
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 flex space-x-4">
-            <li>
+            <li className="lg:flex hidden">
               <Link
                 className="hover:text-blue-600 transition-transform duration-300 transform hover:scale-105"
                 to="/"
@@ -51,29 +53,29 @@ const Navbar = () => {
             </li>
 
             <li className="relative group">
-              <details className="group">
+              
                 <summary className="cursor-pointer hover:text-blue-600 transition-transform duration-300 transform hover:scale-105">
                   <Link className="" to="/booking">
                     Booking ({selector.length > 0 ? selector.length : "0"})
                   </Link>
                 </summary>
-              </details>
+              
             </li>
 
-            <li>
+            <li className="lg:flex hidden">
               <Link
-                className="hover:text-blue-600 transition-transform duration-300 transform hover:scale-105"
+                className=" hover:text-blue-600 transition-transform duration-300 transform hover:scale-105"
                 to="/contact"
               >
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="lg:flex hidden">
               <Link
                 className="flex items-center hover:text-blue-600 transition-transform duration-300 transform hover:scale-105"
                 to="/contact"
               >
-                <FaPhone className="mr-1" /> 01910255376
+                <FaPhone className="mr-1" /> 0161.......22
               </Link>
             </li>
           </ul>

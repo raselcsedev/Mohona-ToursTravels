@@ -69,9 +69,9 @@ const SliderBanner = () => {
       {/* Form Container */}
       <form
         onSubmit={handleSearch}
-        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-xl"
+        className=" absolute top-4 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-xl"
       >
-        <div className="flex flex-wrap items-center border border-yellow-500 rounded-full shadow-2xl overflow-hidden bg-white mt-64 transition-transform duration-300 hover:scale-105">
+        <div className="lg:flex hidden flex-wrap items-center border border-yellow-500 rounded-full shadow-2xl overflow-hidden bg-white mt-64 transition-transform duration-300 hover:scale-105">
           <input
             type="text"
             value={location}
