@@ -1,5 +1,6 @@
-
+import Destinations from "../Destinations/Destinations";
 import SliderBanner from "../Slider/Sliderbanner";
+import SpecialOffers from "../SpecialOffers/SpecialOffers";
 import WhyChoose from "../WhyChoose/WhyChoose";
 import Feature from "../Feature/Feature";
 
@@ -9,6 +10,8 @@ const Home = () => {
       <SliderBanner />
       <WhyChoose />
       <Feature />
+      <Destinations />
+      <SpecialOffers />
     </div>
   );
 };

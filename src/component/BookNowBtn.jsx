@@ -32,7 +32,7 @@ const BookNowBtn = ({ item, className }) => {
       ) : (
         <button
           onClick={handleBtn}
-          className={`px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:from-blue-600 hover:to-purple-700 hover:-translate-y-1 transform transition duration-300 ease-in-out ${className}`}
+          className={`px-6 py-2 bg-gradient-to-r from-blue-600 to-gray-600 text-white text-sm rounded-full shadow-lg hover:shadow-2xl hover:from-blue-600 hover:to-purple-700 hover:-translate-y-1 transform transition duration-300 ease-in-out ${className}`}
         >
           Book Now
         </button>
