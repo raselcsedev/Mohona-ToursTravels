@@ -7,11 +7,11 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const selector = useSelector((state) => state.tour.TourCart);
   return (
-    <div className=" w-full sticky bg-white z-50 top-0">
+    <div className="w-full sticky bg-white z-50 top-0">
       <TopNavbar />
       <div className="navbar shadow-lg  bg-white">
         <div className="flex-1">
-          <img className="w-52" src={logo} alt="TourPress Logo" />
+          <img className="w-40 h-8" src={logo} alt="TourPress Logo" />
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 flex space-x-4">

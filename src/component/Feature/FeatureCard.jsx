@@ -29,7 +29,7 @@ const FeatureCard = ({ item }) => {
           </p>
 
           {/* Add to Cart Button */}
-          <BookNowBtn className="" item={item} />
+          <BookNowBtn item={item} />
         </div>
       </div>
     </div>

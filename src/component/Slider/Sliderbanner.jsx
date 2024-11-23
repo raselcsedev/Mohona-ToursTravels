@@ -69,17 +69,17 @@ const SliderBanner = () => {
       {/* Form Container */}
       <form
         onSubmit={handleSearch}
-        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-4xl p-4"
+        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-xl"
       >
-        <div className="flex flex-wrap items-center border border-yellow-500 rounded-full shadow-2xl overflow-hidden bg-white mt-72 transition-transform duration-300 hover:scale-105">
+        <div className="flex flex-wrap items-center border border-yellow-500 rounded-full shadow-2xl overflow-hidden bg-white mt-64 transition-transform duration-300 hover:scale-105">
           <input
             type="text"
             value={location}
             onChange={handleLocationChange}
-            className="p-4 flex-grow outline-none text-gray-700 placeholder-gray-500 w-full md:w-1/2"
+            className="px-4 flex-grow outline-none text-gray-700 placeholder-gray-500 w-full md:w-1/2"
             placeholder="Search..."
           />
-          <select className="border-l border-gray-300 p-4 outline-none bg-white w-full md:w-1/3 transition-transform duration-300 hover:bg-gray-100">
+          <select className="border-l border-gray-300 px-4 outline-none bg-white w-full md:w-1/3 transition-transform duration-300">
             <option value="">Select Category</option>
             <option value="mobile">Mobile</option>
             <option value="digital">Digital Watch</option>
@@ -88,7 +88,7 @@ const SliderBanner = () => {
           </select>
           <button
             type="submit"
-            className="p-6 bg-yellow-500 text-white flex items-center justify-center hover:bg-yellow-600 transition-colors w-full md:w-auto"
+            className="p-4 bg-yellow-500 text-white flex items-center justify-center hover:bg-yellow-600 transition-colors w-full md:w-auto"
           >
             <FaSearch />
           </button>
